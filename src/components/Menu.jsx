@@ -18,8 +18,6 @@ export const Menu = () => {
     return sliderLists[index];
   };
   const currentCocktail = getCocktailAt(0);
-  const prevCocktail = getCocktailAt(-1);
-  const nextCocktail = getCocktailAt(1);
 
   useGSAP(() => {
     gsap.fromTo("#title", { opacity: 0 }, { opacity: 1, duration: 1 });
